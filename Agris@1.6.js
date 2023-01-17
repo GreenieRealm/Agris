@@ -115,12 +115,14 @@ function toggleSwitch(e){
         document.getElementById(e.name).innerHTML = "OFF";
         if (e.name == "auto-color-mode"){
             document.getElementById("container-wheel").style = "display: flex";
+            e.value = "MANUAL";
         } 
     } else {
         e.value = "ON";
         document.getElementById(e.name).innerHTML = "ON";
         if (e.name == "auto-color-mode"){
             document.getElementById("container-wheel").style = "display: none";
+            e.value = "AUTOMATIC";
         } 
     }
 }
