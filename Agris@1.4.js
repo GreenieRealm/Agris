@@ -114,7 +114,7 @@ function toggleSwitch(e){
         e.value = "OFF";
         document.getElementById(e.name).innerHTML = "OFF";
         if (e.name == "auto-color-mode"){
-            document.getElementById("container-wheel").style = "display: block";
+            document.getElementById("container-wheel").style = "display: inline";
         } 
     } else {
         e.value = "ON";
