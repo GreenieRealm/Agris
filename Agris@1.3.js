@@ -112,18 +112,16 @@ function toggleSwitch(e){
     document.getElementById("submit-btn").style.display="inline";
     if (e.value == "ON"){
         e.value = "OFF";
-        if (e.name == "status-indicator"){
-            document.getElementById("status-indicator").innerHTML = "OFF";
-        } else {
-            document.getElementById("haptic-feedback").innerHTML = "OFF";
-        }
+        document.getElementById(e.name).innerHTML = "OFF";
+        if (e.name == "auto-color-mode"){
+            document.getElementById("container-wheel").style = "display: block";
+        } 
     } else {
         e.value = "ON";
-        if (e.name == "status-indicator"){
-            document.getElementById("status-indicator").innerHTML = "ON";
-        } else {
-            document.getElementById("haptic-feedback").innerHTML = "ON";
-        }
+        document.getElementById(e.name).innerHTML = "ON";
+        if (e.name == "auto-color-mode"){
+            document.getElementById("container-wheel").style = "display: none";
+        } 
     }
 }
 
