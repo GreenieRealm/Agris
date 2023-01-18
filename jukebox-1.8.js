@@ -124,7 +124,7 @@ function updateMusicSheet(music_notes, tempo){
     note.classList.add('bar');
     note.classList.add('end');
     music_sheet.appendChild(note);
-    document.getElementById("melody-info").innerHTML = "Note count: " + getMelodyNoteCount(music_notes) + " Melody length: " + getMelodyDuration(music_notes, tempo);
+    document.getElementById("melody-info").innerHTML = "Note count: " + getMelodyNoteCount(music_notes) + "&#10;Melody duration: " + getMelodyDuration(music_notes, tempo);
 }
 
 function updatePreloadedMusicSheet(){
