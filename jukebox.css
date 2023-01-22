@@ -29,6 +29,44 @@
     background-color: rgba(0, 255, 0, 0.1);
 }
 
+.sharp-note {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    position: relative;
+    display: inline-block;
+    height: 40px;
+    left: 10px;
+    width: 9px;
+    background-image: url("sharp-note.svg");
+}
+
+.flat-note {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    position: relative;
+    display: inline-block;
+    height: 20px;
+    left: 10px;
+    width: 6px;
+    background-image: url("flat-note.svg");
+}
+
+.eighth-note {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    position: relative;
+    display: inline-block;
+    height: 70px;
+    width: 35px;
+    top: -4px;
+    background-image: url("eighth-note-up.svg");
+}
+
+
+
 .note {
     position: relative;
     display: inline-block;
@@ -44,6 +82,7 @@
     height: 8px;
     width: 12px;
 }
+
 .whole.note::before {
     position: absolute;
     content: "";
@@ -177,6 +216,307 @@
     top: -16px;
 }
 
+/* octave 4 */
+.sharp-note.C4{
+    top: -20px;
+}
+
+.sharp-note.Cs4{
+    top: -20px;
+}
+
+.sharp-note.D4{
+    top: -24px;
+}
+
+.sharp-note.E4{
+    top: -28px;
+}
+
+.sharp-note.Eb4{
+    top: -28px;
+}
+
+.sharp-note.F4{
+    top: -32px;
+}
+
+.sharp-note.Fs4{
+    top: -32px;
+}
+
+.sharp-note.G4{
+    top: -36px;
+}
+
+.sharp-note.Gs4{
+    top: -36px;
+}
+
+.sharp-note.A4{
+    top: -40px;
+}
+
+.sharp-note.B4{
+    top: -44px;
+}
+
+.sharp-note.Bb4{
+    top: -44px;
+}
+
+/* octave 5 */
+.sharp-note.C5{
+    top: -48px;
+}
+
+.sharp-note.Cs5{
+    top: -48px;
+}
+
+.sharp-note.D5{
+    top: -52px;
+}
+
+.sharp-note.E5{
+    top: -56px;
+}
+
+.sharp-note.Eb5{
+    top: -56px;
+}
+
+.sharp-note.F5{
+    top: -60px;
+}
+
+.sharp-note.Fs5{
+    top: -60px;
+}
+
+.sharp-note.G5{
+    top: -64px;
+}
+
+.sharp-note.Gs5{
+    top: -64px;
+}
+
+.sharp-note.A5{
+    top: -68px;
+}
+
+.sharp-note.B5{
+    top: -72px;
+}
+
+.sharp-note.Bb5{
+    top: -72px;
+}
+
+/* octave 4 */
+.flat-note.C4{
+    top: -34px;
+}
+
+.flat-note.Cs4{
+    top: -34px;
+}
+
+.flat-note.D4{
+    top: -38px;
+}
+
+.flat-note.E4{
+    top: -42px;
+}
+
+.flat-note.Eb4{
+    top: -42px;
+}
+
+.flat-note.F4{
+    top: -46px;
+}
+
+.flat-note.Fs4{
+    top: -46px;
+}
+
+.flat-note.G4{
+    top: -50px;
+}
+
+.flat-note.Gs4{
+    top: -50px;
+}
+
+.flat-note.A4{
+    top: -54px;
+}
+
+.flat-note.B4{
+    top: -58px;
+}
+
+.flat-note.Bb4{
+    top: -58px;
+}
+
+/* octave 5 */
+.flat-note.C5{
+    top: -62px;
+}
+
+.flat-note.Cs5{
+    top: -62px;
+}
+
+.flat-note.D5{
+    top: -66px;
+}
+
+.flat-note.E5{
+    top: -70px;
+}
+
+.flat-note.Eb5{
+    top: -70px;
+}
+
+.flat-note.F5{
+    top: -74px;
+}
+
+.flat-note.Fs5{
+    top: -74px;
+}
+
+.flat-note.G5{
+    top: -78px;
+}
+
+.flat-note.Gs5{
+    top: -78px;
+}
+
+.flat-note.A5{
+    top: -82px;
+}
+
+.flat-note.B5{
+    top: -86px;
+}
+
+.flat-note.Bb5{
+    top: -86px;
+}
+
+/* octave 4 */
+.eighth-note.C4{
+    top: -4px;
+}
+
+.eighth-note.Cs4{
+    top: -4px;
+}
+
+.eighth-note.D4{
+    top: -8px;
+}
+
+.eighth-note.E4{
+    top: -12px;
+}
+
+.eighth-note.Eb4{
+    top: -12px;
+}
+
+.eighth-note.F4{
+    top: -16px;
+}
+
+.eighth-note.Fs4{
+    top: -16px;
+}
+
+.eighth-note.G4{
+    top: -20px;
+}
+
+.eighth-note.Gs4{
+    top: -20px;
+}
+
+.eighth-note.A4{
+    top: -24px;
+}
+
+.eighth-note.B4{
+    top: -28px;
+}
+
+.eighth-note.Bb4{
+    top: -28px;
+}
+
+/* octave 5 */
+.eighth-note.C5{
+    top: -32px;
+}
+
+.eighth-note.Cs5{
+    top: -32px;
+}
+
+.eighth-note.D5{
+    top: -36px;
+}
+
+.eighth-note.E5{
+    top: -40px;
+}
+
+.eighth-note.Eb5{
+    top: -40px;
+}
+
+.eighth-note.F5{
+    top: -44px;
+}
+
+.eighth-note.Fs5{
+    top: -44px;
+}
+
+.eighth-note.G5{
+    top: -48px;
+}
+
+.eighth-note.Gs5{
+    top: -48px;
+}
+
+.eighth-note.A5{
+    top: -52px;
+}
+
+.eighth-note.B5{
+    top: -56px;
+}
+
+.eighth-note.Bb5{
+    top: -56px;
+}
+
+.eighth-note.C5, .eighth-note.Cs5, .eighth-note.D5, .eighth-note.E5, .eighth-note.Eb5, .eighth-note.F5, .eighth-note.Fs5,
+.eighth-note.G5, .eighth-note.Gs5, .eighth-note.A5, .eighth-note.B5, .Bb5{
+    height: 70px;
+    width: 35px;
+    left: 12px;
+    background-image: url("eighth-note-down.svg");
+}
 
 .quarter.note.C5::after,
 .half.note.C5::after,
