@@ -544,6 +544,7 @@
 .half.note.Bb5::after
  {
     top: 4px;
+    right: 11px;
 }
 /* style for selector */
 .select{
