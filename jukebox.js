@@ -1,25 +1,31 @@
 
 const preloaded_melodies_name = ['Before Winter Ends', 'weird song'];
-const preloaded_melodies_music = ['41.50,46.25,46.25,41.25,41.25,46.25,48.5,46.25,45.5,46,50,48.25,50.25,51.25,55.25,53,50.125,51.125,53.25,51.25,51.25,50.25,48.5,46.125,48.125,50.25,51.25,50.25,48.25,46.5,46.125,48.125,50.25,46.25,46.25,43.25,46.25,46.25,48.25,48.5,46',
+const preloaded_melodies_music = ['41.25,46.25,46.25,41.25,41.25,46.25,48.5,46.25,45.5,46,50,48.25,50.25,51.25,55.25,53,50.125,51.125,53.25,51.25,51.25,50.25,48.5,46.125,48.125,50.25,51.25,50.25,48.25,46.5,46.125,48.125,50.25,46.25,46.25,43.25,46.25,46.25,48.25,48.5,46',
                                     '50, 41.5'];
 
 function updateMusicSheet(music_notes, tempo){
     if (music_notes == ""){
-        if (getCookie("melodySource_Agris") == "Customized"){
-            document.getElementById("tune-up").style = "display: none";
-            document.getElementById("tune-down").style = "display: none";
-            document.getElementById("remove").style = "display: none";
-            document.getElementById("start-over").style = "display: none";
-        } else {
-            document.getElementById("tune-up-preloaded").style = "display: none";
-            document.getElementById("tune-down-preloaded").style = "display: none";
-        }
-        
+        step_count = 0;
+        document.getElementById("step-count").style = "display: none;";
+        document.getElementById("tune-up").style = "display: none";
+        document.getElementById("tune-down").style = "display: none";
+        document.getElementById("remove").style = "display: none";
+        document.getElementById("start-over").style = "display: none";
+        document.getElementById("tune-up-preloaded").style = "display: none";
+        document.getElementById("tune-down-preloaded").style = "display: none";
     } else {
+        document.getElementById("step-count").style = "display: none;";
+        if (step_count > 0){
+            document.getElementById("step-count").style = "display: flex; justify-content: center;";
+            document.getElementById("step-count").innerHTML = " " + step_count.toString() + "/2 step-up";
+        } else if (step_count < 0){
+            document.getElementById("step-count").style = "display: flex; justify-content: center;";
+            document.getElementById("step-count").innerHTML = " " + (step_count*-1).toString() + "/2 step-down";
+        } 
         if (music_notes.split(",").length >= 256){
             document.getElementById("add").style = "display: none";
         } else {
-            document.getElementById("add").style = "display: inline; padding-right: 30px";
+            document.getElementById("add").style = "display: inline";
         }
         
         let a = music_notes.split(",");
@@ -37,7 +43,7 @@ function updateMusicSheet(music_notes, tempo){
         // ensure highest note is still within range
         if (highest_note < 87){
             if (getCookie("melodySource_Agris") == "Customized"){
-                document.getElementById("tune-up").style = "display: inline; padding-right: 30px;";
+                document.getElementById("tune-up").style = "display: inline; padding-right: 30px";
             } else {
                 document.getElementById("tune-up-preloaded").style = "display: inline;";
             }
@@ -51,7 +57,7 @@ function updateMusicSheet(music_notes, tempo){
         // ensure lowest note is still within range
         if (highest_note > 0){
             if (getCookie("melodySource_Agris") == "Customized"){
-                document.getElementById("tune-down").style = "display: inline; padding-right: 30px;";
+                document.getElementById("tune-down").style = "display: inline; padding-right: 30px";
             } else {
                 document.getElementById("tune-down-preloaded").style = "display: inline;";
             }
@@ -63,8 +69,8 @@ function updateMusicSheet(music_notes, tempo){
             }
         }
         
-        document.getElementById("remove").style = "display: inline; padding-right: 30px";
-        document.getElementById("start-over").style = "display: inline;";
+        document.getElementById("remove").style = "display: inline; padding-left: 30px";
+        document.getElementById("start-over").style = "display: inline; padding-left: 30px";
         
     }
     
@@ -81,37 +87,53 @@ function updateMusicSheet(music_notes, tempo){
             let note_info = parseFloat(music_note_array[j]);
             let integer = Math.floor(note_info);
             let decimal = parseFloat(1000*(note_info - integer));
-            
-            //get duration
-            switch (decimal){
-                case 0:
-                    note.classList.add('whole');
-                    break;
+            if (note_info < 61 && note_info > 39){
+                //get duration
+                switch (decimal){
+                    case 0:
+                        note.classList.add('whole');
+                        break;
+                    
+                    case 125:
+                        note.classList.add('eighth-note');
+                        note.classList.remove('note');
+                        break;
+
+                    case 250:
+                        note.classList.add('quarter');
+                        break;
+
+                    case 500:
+                        note.classList.add('half');
+                        break;
+                }
                 
-                case 125:
-                    note.classList.add('eighth');
-                    break;
-
-                case 250:
-                    note.classList.add('quarter');
-                    break;
-
-                case 500:
-                    note.classList.add('half');
-                    break;
-            }
-            
-            // get note 
-            let note_name = note_label_array[integer%12];
-            // get octave
-            if (integer<3){
-                note_name += '0';
-                // note.classList.add('0');
-                // or we can add weird note here
+                // get note 
+                let module_note = integer%12;
+                let note_name = note_label_array[module_note];
+                // get octave
+                if (integer<3){
+                    note_name += '0';
+                    // note.classList.add('0');
+                    // or we can add weird note here
+                } else {
+                    note_name += (Math.floor((integer - 3) / 12)+1).toString();
+                }
+                note.classList.add(note_name);
+                let shifted_symbol = document.createElement('div');
+                if (module_note == 4 || module_note == 9 || module_note == 11){
+                    shifted_symbol.classList.add('sharp-note');
+                    shifted_symbol.classList.add(note_name);
+                    music_sheet.appendChild(shifted_symbol);
+                } else if (module_note == 1 || module_note == 6){
+                    shifted_symbol.classList.add('flat-note');
+                    shifted_symbol.classList.add(note_name);
+                    music_sheet.appendChild(shifted_symbol);
+                }
             } else {
-                note_name += (Math.floor((integer - 3) / 12)+1).toString();
+                // add invisble note
+                note.classList.add('invisible-note');
             }
-            note.classList.add(note_name);
             music_sheet.appendChild(note);
             
         }
@@ -124,7 +146,7 @@ function updateMusicSheet(music_notes, tempo){
     note.classList.add('bar');
     note.classList.add('end');
     music_sheet.appendChild(note);
-    document.getElementById("melody-info").innerHTML = "Note count: " + getMelodyNoteCount(music_notes) + "&#10;Melody duration: " + getMelodyDuration(music_notes, tempo);
+    document.getElementById("melody-info").innerHTML = "Note count: " + getMelodyNoteCount(music_notes) + " Melody length: " + getMelodyDuration(music_notes, tempo);
 }
 
 function updatePreloadedMusicSheet(){
@@ -294,6 +316,7 @@ function toneUpPreloaded(){
         tuned_music += (parseFloat(note_array[i]) + 1).toString() + "," ;
     }
     submitted_melody.value = tuned_music.slice(0, -1);
+    step_count += 1;
     updateMusicSheet(submitted_melody.value, document.getElementById("tempo").value);
 }
 
@@ -304,6 +327,7 @@ function toneDownPreloaded(){
         tuned_music += (parseFloat(note_array[i]) - 1).toString() + "," ;
     }
     submitted_melody.value = tuned_music.slice(0, -1);
+    step_count -= 1;
     updateMusicSheet(submitted_melody.value, document.getElementById("tempo").value);
 }
 
@@ -314,6 +338,7 @@ function toneUp(){
         tuned_music += (parseFloat(note_array[i]) + 1).toString() + "," ;
     }
     customized_melody_music = tuned_music.slice(0, -1);
+    step_count += 1;
     updateMusicSheet(customized_melody_music, document.getElementById("tempo").value);
 }
 
@@ -324,6 +349,7 @@ function toneDown(){
         tuned_music += (parseFloat(note_array[i]) - 1).toString() + "," ;
     }
     customized_melody_music = tuned_music.slice(0, -1);
+    step_count -= 1;
     updateMusicSheet(customized_melody_music, document.getElementById("tempo").value);
 }
 
@@ -389,20 +415,25 @@ function getMelodyNoteCount(melody){
 
 function getMelodyDuration(melody, tempo){
     if (melody == ""){
-        return "0 second.";
+        return "0 second";
     } else {
         let duration = 0;
         let melody_array;
         melody_array = melody.split(",");
         for (let i=0; i< melody_array.length; i++){
             let decimal = parseFloat(melody_array[i]) - Math.floor(parseFloat(melody_array[i]));
-            duration += decimal;
+            if (decimal != 0){
+                duration += decimal;
+            } else {
+                duration += 1;
+            }
+            
         }
         let duration_second = (60/tempo*duration).toFixed(2);
         if (duration_second > 1){
-            return duration_second.toString() + " seconds.";
+            return duration_second.toString() + " seconds";
         } else {
-            return duration_second.toString() + " second.";
+            return duration_second.toString() + " second";
         }
     }
 }
@@ -458,7 +489,7 @@ function showCustomized(){
         document.getElementById("customized-melody-title").style = "background-image: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.8)), url('https://drive.google.com/uc?export=view&id=1S2Vz16B5M46dWtDsirKE0TB_9H8g4xk_'); background-size: cover";
     }
     document.getElementById("preloaded-melody-title").style = "background-image: none";
-    document.getElementById("introduction").innerHTML = "Build your own melody";
+    document.getElementById("introduction").innerHTML = "Anything below C4 or above A6 won't be displayed in the music sheet but still be played in your melody";
     setCookie('melodySource_Agris', "Customized", 1);
     var preloaded_selector = document.getElementsByClassName("entire_preloaded_melody_selector");
     for (var i=0; i< preloaded_selector.length; i++){
