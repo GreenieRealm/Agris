@@ -461,9 +461,9 @@ function toggleApplyChange() {
 }
 function showPreloaded(){
     if (getCookie("screenMode_Agris") == "DarkMode"){
-        document.getElementById("preloaded-melody-title").style = "background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.6)), url('https://cdn.jsdelivr.net/gh/GreenieRealm/Agris@latest/piano_background.jpg'); background-size: cover";
+        document.getElementById("preloaded-melody-title").style = "background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.6)), url('https://cdn.jsdelivr.net/gh/GreenieRealm/Agris@2.1/piano_background.jpg'); background-size: cover";
     } else {
-        document.getElementById("preloaded-melody-title").style = "background-image: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.8)), url('https://cdn.jsdelivr.net/gh/GreenieRealm/Agris@latest/piano_background.jpg'); background-size: cover";
+        document.getElementById("preloaded-melody-title").style = "background-image: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.8)), url('https://cdn.jsdelivr.net/gh/GreenieRealm/Agris@2.1/piano_background.jpg'); background-size: cover";
     }
     document.getElementById("customized-melody-title").style = "background-image: none";
     
@@ -484,9 +484,9 @@ function showPreloaded(){
 
 function showCustomized(){
     if (getCookie("screenMode_Agris") == "DarkMode"){
-        document.getElementById("customized-melody-title").style = "background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.6)), url('https://cdn.jsdelivr.net/gh/GreenieRealm/Agris@latest/piano_background.jpg'); background-size: cover";
+        document.getElementById("customized-melody-title").style = "background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.6)), url('https://cdn.jsdelivr.net/gh/GreenieRealm/Agris@2.1/piano_background.jpg'); background-size: cover";
     } else {
-        document.getElementById("customized-melody-title").style = "background-image: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.8)), url('https://cdn.jsdelivr.net/gh/GreenieRealm/Agris@latest/piano_background.jpg'); background-size: cover";
+        document.getElementById("customized-melody-title").style = "background-image: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.8)), url('https://cdn.jsdelivr.net/gh/GreenieRealm/Agris@2.1/piano_background.jpg'); background-size: cover";
     }
     document.getElementById("preloaded-melody-title").style = "background-image: none";
     document.getElementById("introduction").innerHTML = "Anything below C4 or above A6 won't be displayed in the music sheet but still be played in your melody";
@@ -570,9 +570,9 @@ function LightMode() {
     // }
     setCookie('screenMode_Agris', "LightMode", 1);
     if (getCookie("melodySource_Agris") == "Customized"){
-        document.getElementById("customized-melody-title").style = "background-image: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.8)), url('https://cdn.jsdelivr.net/gh/GreenieRealm/Agris@latest/piano_background.jpg'); background-size: cover";
+        document.getElementById("customized-melody-title").style = "background-image: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.8)), url('https://cdn.jsdelivr.net/gh/GreenieRealm/Agris@2.1/piano_background.jpg'); background-size: cover";
     } else {
-        document.getElementById("preloaded-melody-title").style = "background-image: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.8)), url('https://cdn.jsdelivr.net/gh/GreenieRealm/Agris@latest/piano_background.jpg'); background-size: cover";
+        document.getElementById("preloaded-melody-title").style = "background-image: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.8)), url('https://cdn.jsdelivr.net/gh/GreenieRealm/Agris@2.1/piano_background.jpg'); background-size: cover";
     }
 }
 
@@ -604,9 +604,9 @@ function DarkMode() {
     // }
     setCookie('screenMode_Agris', "DarkMode", 1);
     if (getCookie("melodySource_Agris") == "Customized"){
-        document.getElementById("customized-melody-title").style = "background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.6)), url('https://cdn.jsdelivr.net/gh/GreenieRealm/Agris@latest/piano_background.jpg'); background-size: cover";
+        document.getElementById("customized-melody-title").style = "background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.6)), url('https://cdn.jsdelivr.net/gh/GreenieRealm/Agris@2.1/piano_background.jpg'); background-size: cover";
     } else {
-        document.getElementById("preloaded-melody-title").style = "background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.6)), url('https://cdn.jsdelivr.net/gh/GreenieRealm/Agris@latest/piano_background.jpg'); background-size: cover";
+        document.getElementById("preloaded-melody-title").style = "background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.6)), url('https://cdn.jsdelivr.net/gh/GreenieRealm/Agris@2.1/piano_background.jpg'); background-size: cover";
     }
 }
 
