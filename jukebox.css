@@ -38,7 +38,7 @@
     height: 40px;
     left: 10px;
     width: 9px;
-    background-image: url("https://cdn.jsdelivr.net/gh/GreenieRealm/Agris@latest/sharp-note.svg");
+    background-image: url("https://cdn.jsdelivr.net/gh/GreenieRealm/Agris@2.1/sharp-note.svg");
 }
 
 .flat-note {
@@ -50,7 +50,7 @@
     height: 20px;
     left: 10px;
     width: 6px;
-    background-image: url("https://cdn.jsdelivr.net/gh/GreenieRealm/Agris@latest/flat-note.svg");
+    background-image: url("https://cdn.jsdelivr.net/gh/GreenieRealm/Agris@2.1/flat-note.svg");
 }
 
 .eighth-note {
@@ -62,7 +62,7 @@
     height: 70px;
     width: 35px;
     top: -4px;
-    background-image: url("https://cdn.jsdelivr.net/gh/GreenieRealm/Agris@latest/eighth-note-up.svg");
+    background-image: url("https://cdn.jsdelivr.net/gh/GreenieRealm/Agris@2.1/eighth-note-up.svg");
 }
 
 
@@ -515,7 +515,7 @@
     height: 70px;
     width: 35px;
     left: 12px;
-    background-image: url("https://cdn.jsdelivr.net/gh/GreenieRealm/Agris@latest/eighth-note-down.svg");
+    background-image: url("https://cdn.jsdelivr.net/gh/GreenieRealm/Agris@2.1/eighth-note-down.svg");
 }
 
 .quarter.note.C5::after,
