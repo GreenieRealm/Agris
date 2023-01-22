@@ -1,5 +1,5 @@
 
-const preloaded_melodies_name = ['Before Winter Ends', 'weird song', 'abc'];
+const preloaded_melodies_name = ['Before Winter Ends', 'weird song'];
 const preloaded_melodies_music = ['41.25,46.25,46.25,41.25,41.25,46.25,48.5,46.25,45.5,46,50,48.25,50.25,51.25,55.25,53,50.125,51.125,53.25,51.25,51.25,50.25,48.5,46.125,48.125,50.25,51.25,50.25,48.25,46.5,46.125,48.125,50.25,46.25,46.25,43.25,46.25,46.25,48.25,48.5,46',
                                     '50, 41.5'];
 
