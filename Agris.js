@@ -1,4 +1,4 @@
-// version 1.2
+// version 2.2
 function setCookie(key, value, expiry) {
     var expires = new Date();
     expires.setTime(expires.getTime() + (expiry * 24 * 60 * 60 * 1000));
@@ -16,7 +16,7 @@ function getCookie(name) {
     return null;
 }
 
-function LightMode() {
+function LightMode(saveCookie = true) {
     var el = document.getElementsByClassName("color-sensitive");
     for (var i = 0; i < el.length; i++) {
         el[i].style.color = "#6c757d";
@@ -42,10 +42,13 @@ function LightMode() {
     // for (var i = 0; i < el3.length; i++) {
     //   el3[i].style.background = "#000000";
     // }
-    setCookie('screenMode_Agris', "LightMode", 1);
+    if (saveCookie){
+        setCookie('screenMode_Agris', "LightMode", 1);
+    }
+    
 }
 
-function DarkMode() {
+function DarkMode(saveCookie = true) {
     var el = document.getElementsByClassName("color-sensitive");
     for (var i = 0; i < el.length; i++) {
         el[i].style.color = "#f8f9fa";
@@ -71,7 +74,10 @@ function DarkMode() {
     // for (var i = 0; i < el3.length; i++) {
     //   el3[i].style.background = "#ffffff";
     // }
-    setCookie('screenMode_Agris', "DarkMode", 1);
+    if (saveCookie){
+        setCookie('screenMode_Agris', "DarkMode", 1);
+    }
+    
 }
 
 
