@@ -1,4 +1,4 @@
-// version 2.3
+// version 2.5
 function setCookie(key, value, expiry) {
     var expires = new Date();
     expires.setTime(expires.getTime() + (expiry * 24 * 60 * 60 * 1000));
@@ -37,13 +37,15 @@ function LightMode(saveCookie = true) {
     for (var i = 0; i < el5.length; i++) {
         el5[i].style.Color = "black";
     }
-    document.getElementById("colorpicker").style.backgroundColor="#353535";
+    var el6 = document.getElementById("colorpicker");
+    if(typeof(el6) != 'undefined' && el6 != null){
+        el6.style.backgroundColor="#353535";
+    }
     // var el3 = document.getElementsByClassName("color-sensitive-toggle");
     // for (var i = 0; i < el3.length; i++) {
     //   el3[i].style.background = "#000000";
     // }
     if (saveCookie){
-        alert("change screen mode to light");
         setCookie('screenMode_Agris', "LightMode", 1);
     }
     
@@ -70,13 +72,15 @@ function DarkMode(saveCookie = true) {
     for (var i = 0; i < el5.length; i++) {
         el5[i].style.Color = "#f8f9fa";
     }
-    document.getElementById("colorpicker").style.backgroundColor="#4d4c4c";
+    var el6 = document.getElementById("colorpicker");
+    if(typeof(el6) != 'undefined' && el6 != null){
+        el6.style.backgroundColor="#353535";
+    }
     // var el3 = document.getElementsByClassName("color-sensitive-toggle");
     // for (var i = 0; i < el3.length; i++) {
     //   el3[i].style.background = "#ffffff";
     // }
     if (saveCookie){
-        alert("change screen mode to dark");
         setCookie('screenMode_Agris', "DarkMode", 1);
     }
     
