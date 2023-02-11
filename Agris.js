@@ -1,4 +1,4 @@
-// version 2.2
+// version 2.3
 function setCookie(key, value, expiry) {
     var expires = new Date();
     expires.setTime(expires.getTime() + (expiry * 24 * 60 * 60 * 1000));
@@ -43,6 +43,7 @@ function LightMode(saveCookie = true) {
     //   el3[i].style.background = "#000000";
     // }
     if (saveCookie){
+        alert("change screen mode to light");
         setCookie('screenMode_Agris', "LightMode", 1);
     }
     
@@ -75,6 +76,7 @@ function DarkMode(saveCookie = true) {
     //   el3[i].style.background = "#ffffff";
     // }
     if (saveCookie){
+        alert("change screen mode to dark");
         setCookie('screenMode_Agris', "DarkMode", 1);
     }
     
