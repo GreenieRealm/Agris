@@ -1,55 +1,73 @@
-<?xml version="1.0"?>
-<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:svg="http://www.w3.org/2000/svg" id="svg3912" viewBox="0 0 744.09 1052.4" version="1.1">
-  <title id="title3954">Quarter Rest</title>
-  <defs id="defs3914">
-    <linearGradient id="linearGradient3790" y2="661.35" gradientUnits="userSpaceOnUse" x2="540.24" gradientTransform="matrix(.80372 0 0 .80372 -111.3 83.235)" y1="451.83" x1="623.37">
-      <stop id="stop3015-2" stop-opacity=".82639" offset="0"/>
-      <stop id="stop3017-3" offset="1"/>
-    </linearGradient>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="26.219999"
+   height="74.739998"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.47 r22583"
+   sodipodi:docname="crotchet_rest_plain-svg.svg">
+  <defs
+     id="defs4">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       id="perspective10" />
   </defs>
-  <path id="path2986-1" stroke-linejoin="round" d="m414.37 453.28c0 18.812-37.624 47.03-37.624 84.655 0 14.109 28.218 56.436 47.03 79.952-9.4061-4.703-18.812-9.4061-32.921-9.4061-28.218 0-37.624 23.515-37.624 37.624 0 9.4061 9.4061 18.812 14.109 28.218-28.218-18.812-47.03-37.624-47.03-56.436 0-47.03 32.122-30.57 55.637-39.976-23.515-23.515-46.231-58.788-46.231-72.897 0-9.4061 28.218-42.327 37.624-65.842v-14.109c0-14.109-9.4061-32.921-14.109-47.03 18.812 23.515 61.139 65.843 61.139 75.249z" fill-rule="evenodd" stroke="#000" stroke-linecap="round" stroke-width="4.703" fill="url(#linearGradient3790)"/>
-  <metadata>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.35"
+     inkscape:cx="375"
+     inkscape:cy="618.78624"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="892"
+     inkscape:window-height="764"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata7">
     <rdf:RDF>
-      <cc:Work>
+      <cc:Work
+         rdf:about="">
         <dc:format>image/svg+xml</dc:format>
-        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-        <cc:license rdf:resource="http://creativecommons.org/licenses/publicdomain/"/>
-        <dc:publisher>
-          <cc:Agent rdf:about="http://openclipart.org/">
-            <dc:title>Openclipart</dc:title>
-          </cc:Agent>
-        </dc:publisher>
-        <dc:title>Quarter Rest</dc:title>
-        <dc:date>2010-11-04T18:45:26</dc:date>
-        <dc:description>A single quarter rest.</dc:description>
-        <dc:source>http://openclipart.org/detail/93883/quarter-rest-by-jaschon</dc:source>
-        <dc:creator>
-          <cc:Agent>
-            <dc:title>jaschon</dc:title>
-          </cc:Agent>
-        </dc:creator>
-        <dc:subject>
-          <rdf:Bag>
-            <rdf:li>black and white</rdf:li>
-            <rdf:li>clip art</rdf:li>
-            <rdf:li>clipart</rdf:li>
-            <rdf:li>flag</rdf:li>
-            <rdf:li>music</rdf:li>
-            <rdf:li>music note</rdf:li>
-            <rdf:li>musical notation</rdf:li>
-            <rdf:li>quarter</rdf:li>
-            <rdf:li>quaver</rdf:li>
-            <rdf:li>rest</rdf:li>
-            <rdf:li>sound</rdf:li>
-            <rdf:li>staff</rdf:li>
-          </rdf:Bag>
-        </dc:subject>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
       </cc:Work>
-      <cc:License rdf:about="http://creativecommons.org/licenses/publicdomain/">
-        <cc:permits rdf:resource="http://creativecommons.org/ns#Reproduction"/>
-        <cc:permits rdf:resource="http://creativecommons.org/ns#Distribution"/>
-        <cc:permits rdf:resource="http://creativecommons.org/ns#DerivativeWorks"/>
-      </cc:License>
     </rdf:RDF>
   </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-977.62215)">
+    <g
+       style="font-size:40px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       id="text2824"
+       transform="matrix(0.99974987,0,0,0.99997083,-112.50645,534.65124)">
+      <path
+         d="m 138.76116,462.5307 c -6.84377,8.15627 -10.26565,14.25001 -10.26562,18.28125 -3e-5,3.89063 3.25778,9.72656 9.77343,17.50781 l -2.03906,2.88282 c -3.28128,-1.92189 -6.09377,-2.88283 -8.4375,-2.88282 -3.04689,-10e-6 -4.57033,1.82811 -4.57031,5.48438 -2e-5,3.74998 1.66404,7.47654 4.99219,11.17969 l -1.82813,2.74218 c -9.23438,-6.84377 -13.85157,-12.93751 -13.85156,-18.28125 -1e-5,-2.71876 0.93749,-4.875 2.8125,-6.46875 1.73436,-1.5 3.98436,-2.25 6.75,-2.25 1.78123,0 3.74998,0.46875 5.90625,1.40625 l -14.13281,-18.77343 c 6.70311,-5.90624 10.05467,-11.24998 10.05468,-16.03125 -10e-6,-3.79685 -2.27345,-8.57809 -6.82031,-14.34375 l 5.625,0 16.03125,19.54687"
+         style="font-size:144px;font-family:musica;-inkscape-font-specification:musica"
+         id="path2829" />
+    </g>
+  </g>
 </svg>
