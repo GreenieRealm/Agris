@@ -65,7 +65,54 @@
     background-image: url("https://cdn.jsdelivr.net/gh/GreenieRealm/Agris@2.1/eighth-note-up.svg");
 }
 
-
+.whole_rest {
+    position: relative;
+    display: inline-block;
+    width: 12px;
+    height: 5px;
+    margin: 0 12px;
+    margin-bottom: 48px;
+    background-color: black;
+    top: -19px;
+  }
+  .half_rest {
+    position: relative;
+    display: inline-block;
+    width: 12px;
+    height: 5px;
+    margin: 0 12px;
+    margin-bottom: 48px;
+    background-color: black;
+    top: -16px;
+  }
+  .quarter_rest {
+    position: relative;
+    display: inline-block;
+    width: 12px;
+    height: 40px;
+    margin: 0 12px;
+    margin-bottom: 48px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: auto 200%;
+    background-position: center center;
+    background-image: url("https://cdn.jsdelivr.net/gh/GreenieRealm/Agris@2.6/quarter_rest.svg");
+    top: -4px;
+  }
+  .eighth_rest {
+    position: relative;
+    display: inline-block;
+    width: 12px;
+    height: 40px;
+    margin: 0 12px;
+    margin-bottom: 48px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: auto 120%;
+    background-position: center center;
+    background-image: url("https://cdn.jsdelivr.net/gh/GreenieRealm/Agris@2.6/eighth_rest.svg");
+    top: -3px;
+  }
 
 .note {
     position: relative;
