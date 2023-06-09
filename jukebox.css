@@ -94,7 +94,6 @@
     background-color: transparent;
     background-repeat: no-repeat;
     background-size: auto 50%;
-    background-position: center center;
     background-image: url("https://cdn.jsdelivr.net/gh/GreenieRealm/Agris@2.10/quarter_rest.svg");
     top: -44px;
   }
@@ -107,7 +106,6 @@
     background-color: transparent;
     background-repeat: no-repeat;
     background-size: auto 40%;
-    background-position: center center;
     background-image: url("https://cdn.jsdelivr.net/gh/GreenieRealm/Agris@2.10/eighth_rest.svg");
     top: -44px;
   }
