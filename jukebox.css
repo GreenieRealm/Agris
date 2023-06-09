@@ -75,7 +75,7 @@
     background-color: black;
     top: -19px;
   }
-  .half_rest {
+.half_rest {
     position: relative;
     display: inline-block;
     width: 12px;
@@ -85,30 +85,30 @@
     background-color: black;
     top: -16px;
   }
-  .quarter_rest {
-    position: relative;
-    display: inline-block;
-    width: 12px;
-    height: 40px;
-    margin: 0 12px;
+.quarter_rest {
     background-color: transparent;
     background-repeat: no-repeat;
-    background-size: auto 50%;
-    background-image: url("https://cdn.jsdelivr.net/gh/GreenieRealm/Agris@2.10/quarter_rest.svg");
-    top: -44px;
-  }
-  .eighth_rest {
+    background-size: auto 60%;
     position: relative;
     display: inline-block;
     width: 12px;
     height: 40px;
+    top: -36px;
     margin: 0 12px;
+    background-image: url("https://cdn.jsdelivr.net/gh/GreenieRealm/Agris@2.10/quarter_rest.svg");
+}
+.eighth_rest {
     background-color: transparent;
     background-repeat: no-repeat;
     background-size: auto 40%;
+    position: relative;
+    display: inline-block;
+    width: 12px;
+    height: 40px;
+    top: -30px;
+    margin: 0 12px;
     background-image: url("https://cdn.jsdelivr.net/gh/GreenieRealm/Agris@2.10/eighth_rest.svg");
-    top: -44px;
-  }
+}
 
 .note {
     position: relative;
