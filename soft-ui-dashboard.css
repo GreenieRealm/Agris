@@ -27536,3 +27536,76 @@ pre[class*="language-"] {
       transform: scale(2.5);
   }
 }
+
+/* Styling for the popup container */
+.popup-container {
+  display: block;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff; /* Light gray background */
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 90%;
+  z-index: 1000;
+  text-align: center; /* Center align text */
+}
+
+/* Styling for the popup header */
+.popup-header {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 0px; /* Smaller header */
+}
+
+/* Cancel button style */
+.close-button {
+  background: #04c0c0; /* Teal background color */
+  border: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%; /* Make it circular */
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-right: 10px;
+}
+
+.close-button:hover {
+  background-color: #009595; /* Darker teal color on hover */
+}
+
+/* Title style */
+#firmwareVersion {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Description style */
+#firmwareDescription {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #666;
+}
+
+/* Update button style */
+#updateButton {
+  background-color: #04c0c0;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+#updateButton:hover {
+  background-color: #009595;
+}
